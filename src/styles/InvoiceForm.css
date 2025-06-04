@@ -1,0 +1,92 @@
+.invoice-form {
+    max-width: 120%;
+    margin: auto;
+    padding: 15px;
+    background: #eaeaea;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* border: 2px solid darkred; */
+    overflow: hidden; /* Prevent scrolling */
+  }
+
+  h2 {
+    text-align: center;
+    color: rgb(116, 65, 65);
+    margin-bottom: 10px;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* Reduce gap to save space */
+    padding: 5px;
+
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: rgb(148, 78, 78);
+  }
+  
+  input, textarea, select {
+    padding: 8px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    border-color: black;
+    box-shadow: 0 0 4px rgba(139, 0, 0, 0.5);
+  }
+  
+  button {
+    background: darkred;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  button:hover {
+    background: black;
+  }
+  .error-text {
+    color: red;
+    font-size: 12px; 
+    margin-top: 2px; 
+    padding: 0; 
+    position: static; 
+  }
+    
+  .form-group {
+    position: relative; 
+    margin-bottom: 16px; 
+  }
+  
+  
+  @media (max-width: 800px) {
+    .form-grid {
+      grid-template-columns: 1fr;
+      gap: 8px; 
+    }
+    .invoice-form {
+      width: 100%;
+    }
+  }
+  
+
+  
